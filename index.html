@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AdvPúblico — 38 Agentes de IA para a Advocacia Pública</title>
+<meta name="description" content="38 prompts profissionais em 7 módulos: contestação da Fazenda, saúde, execução fiscal, precatórios, licitações (Lei 14.133), servidores, PAD — e o método de auditoria que protege sua assinatura.">
+<meta property="og:title" content="Pack Completo AdvPúblico — 38 Agentes de IA para a Advocacia Pública">
+<meta property="og:description" content="O ciclo completo de uma procuradoria em 38 agentes de IA — do Diário de Justiça ao Tribunal de Contas.">
+<meta property="og:image" content="assets/avatar-1024.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/avatar-1024.png">
+<style>
+  :root {
+    --navy: #0f1b33;
+    --navy-2: #16244275;
+    --gold: #c9a84c;
+    --muted: #b9c4d8;
+    --muted-2: #7d8aa5;
+    --light: #e8ecf4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--navy);
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  h1, h2, .preco { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 56px 0; }
+
+  header.topo { padding: 28px 0; border-bottom: 1px solid rgba(201,168,76,.25); }
+  header.topo img { height: 44px; display: block; }
+
+  .hero { padding: 72px 0 64px; text-align: left; }
+  .selo {
+    display: inline-block;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 20px;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .hero h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.2; margin-bottom: 22px; }
+  .hero h1 strong { color: var(--gold); }
+  .hero p.sub { font-size: clamp(16px, 2.4vw, 19px); color: var(--muted); max-width: 720px; }
+
+  .cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 18px 36px;
+    margin-top: 32px;
+    text-decoration: none;
+    border-radius: 4px;
+    letter-spacing: .5px;
+  }
+  .cta:hover { filter: brightness(1.08); }
+  .cta-nota { display: block; margin-top: 10px; font-size: 13px; color: var(--muted-2); }
+
+  h2 { font-size: clamp(24px, 3.6vw, 32px); margin-bottom: 28px; }
+  h2 em { color: var(--gold); font-style: normal; }
+
+  .modulos { display: grid; gap: 14px; }
+  .modulo {
+    background: rgba(255,255,255,.04);
+    border-left: 6px solid var(--gold);
+    padding: 18px 22px;
+    font-size: 15px;
+    color: var(--light);
+  }
+  .modulo b { display: block; font-size: 16px; margin-bottom: 4px; }
+  .modulo span.n { color: var(--gold); }
+
+  .destaque {
+    background: rgba(201,168,76,.12);
+    border-left: 8px solid var(--gold);
+    padding: 24px 28px;
+    font-size: 16px;
+    color: var(--light);
+    margin: 20px 0;
+  }
+  ul.checks { list-style: none; }
+  ul.checks li { padding: 8px 0 8px 32px; position: relative; color: var(--light); font-size: 15px; }
+  ul.checks li::before { content: "✅"; position: absolute; left: 0; }
+
+  .preco-bloco { text-align: center; background: rgba(255,255,255,.04); padding: 48px 24px; border-radius: 8px; }
+  .preco-risco { text-decoration: line-through; color: var(--muted-2); font-size: 22px; }
+  .preco { font-size: clamp(56px, 10vw, 84px); color: var(--gold); margin: 8px 0; }
+  .preco-bloco .detalhe { color: var(--muted); font-size: 15px; }
+
+  .duas-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 640px) { .duas-col { grid-template-columns: 1fr; } }
+  .col-card { background: rgba(255,255,255,.04); padding: 24px; border-radius: 6px; font-size: 15px; color: var(--light); }
+  .col-card h3 { font-size: 17px; margin-bottom: 12px; color: var(--gold); }
+
+  details {
+    background: rgba(255,255,255,.04);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 14px 18px;
+    font-size: 15px;
+    color: var(--light);
+  }
+  details summary { cursor: pointer; font-weight: bold; color: #fff; }
+  details p { margin-top: 10px; color: var(--muted); }
+
+  footer { border-top: 1px solid rgba(201,168,76,.25); padding: 32px 0; text-align: center; color: var(--muted-2); font-size: 13px; }
+  footer .marca { color: var(--gold); font-weight: bold; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap"><img src="assets/logo-horizontal.png" alt="AdvPúblico"></div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="selo">Preço de fundador · 85% OFF</span>
+    <h1>O ciclo completo de uma procuradoria em <strong>38 agentes de IA</strong> — do Diário de Justiça ao Tribunal de Contas.</h1>
+    <p class="sub">Não é mais um pack genérico de prompts. São 7 módulos que espelham a rotina real de quem defende ente público: contencioso, execução fiscal, cálculos e precatórios, licitações, pessoal, patrimônio — e o controle de qualidade que nenhum outro pack tem. Copie, cole, preencha os campos. <strong>Funciona em qualquer IA de ponta — Claude, ChatGPT, Gemini, Copilot, Grok, DeepSeek — e atualiza junto com elas.</strong></p>
+    <a class="cta" href="#" data-hotmart>QUERO OS 38 AGENTES POR R$ 67 →</a>
+    <span class="cta-nota">Acesso imediato · Garantia incondicional de 7 dias · Em até 6x</span>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Os <em>7 módulos</em></h2>
+    <div class="modulos">
+      <div class="modulo"><b>📥 Rotina e gestão do acervo <span class="n">(5 agentes)</span></b>Leitor de intimações, triagem do lote do dia, resumo de autos, relatório para o gestor e o robô GRATUITO do Diário de Justiça por OAB — substitui recorte pago de R$ 50+/mês.</div>
+      <div class="modulo"><b>⚖️ Contencioso judicial da Fazenda <span class="n">(8 agentes)</span></b>Contestação, saúde (Tema 793/NATJus), provas, perícia, apelação, contrarrazões, embargos de declaração e tribunais superiores.</div>
+      <div class="modulo"><b>🏛️ Execução fiscal <span class="n">(5 agentes)</span></b>Auditoria de CDA, defesa do exequente, prescrição intercorrente, penhora e leilão, parcelamento e extinção.</div>
+      <div class="modulo"><b>🧮 Cálculos e precatórios <span class="n">(5 agentes)</span></b>Impugnação de cálculos (SELIC × título, EC 113), demonstrativo do ente, revisão de excesso em precatório, conferência de RPV, prestação de contas.</div>
+      <div class="modulo"><b>📋 Licitações e contratos — Lei 14.133 <span class="n">(7 agentes)</span></b>Parecer-mestre, análise de edital, contratação direta, fase recursal, aditivos × apostilamento, atas de registro de preços, sanções.</div>
+      <div class="modulo"><b>👥 Pessoal e patrimônio <span class="n">(5 agentes)</span></b>Direitos de servidores, PAD, doações com encargo e reversão, regularização fundiária, convênios e consórcios.</div>
+      <div class="modulo"><b>🛡️ Qualidade e segurança <span class="n">(3 agentes de uso obrigatório)</span></b>Auditor de Citações (contra jurisprudência inventada), Revisor Final Pré-Protocolo e Higienizador LGPD.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Você não está comprando prompts de uma IA. Está comprando <em>o método de uma procuradoria</em> — que roda em todas.</h2>
+    <ul class="checks">
+      <li>Desenhados e testados no <strong>Claude</strong> (funciona no plano gratuito)</li>
+      <li><strong>Testados também no GPT (OpenAI)</strong>: bateria com 3 agentes — leitura de intimação de Juizado, triagem de lote e auditoria de citações com pegadinhas plantadas — aprovada sem NENHUMA adaptação dos prompts</li>
+      <li>Compatíveis com <strong>Gemini, Copilot, Grok e DeepSeek</strong> — a estrutura (papel + saída + regras de segurança) é universal; só variam limites de anexo e detalhes de formatação</li>
+      <li>Automação (Agente 05): escrita para o Claude Code, com equivalentes no Codex CLI (OpenAI) e Gemini CLI (Google)</li>
+      <li>Somado à garantia de atualização: <strong>o pack não depende de ferramenta e não envelhece</strong>. Se a sua procuradoria ou escritório trocar de IA amanhã, o seu investimento vai junto.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Por que R$ 450 é o <em>valor honesto</em></h2>
+    <ul class="checks">
+      <li>São <strong>38 fluxos de trabalho completos</strong> — a menos de R$ 12 por agente no valor cheio</li>
+      <li><strong>Um único agente se paga sozinho</strong>: o Monitor do Diário substitui recorte pago (R$ 50–100/mês, para sempre); a Revisão de Excesso em Precatório já encontrou erros de dezenas de milhares de reais em contas "conferidas"</li>
+      <li>Uma hora de advogado especializado em direito administrativo custa mais que o pack inteiro no preço cheio</li>
+    </ul>
+    <div class="destaque">No lançamento, <strong>preço de fundador: R$ 67</strong> — 85% de desconto, <strong>menos de R$ 2 por agente</strong>. É o menor preço que este pack terá; sobe já no próximo lote.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap duas-col">
+    <div class="col-card">
+      <h3>Para quem é</h3>
+      Procuradores e assessores jurídicos de municípios, câmaras e autarquias · advogados privados que atendem entes públicos · advogados de licitantes (recursos em pregão, impugnação de edital) · controladores internos · aprovados em concursos de procuradoria que querem chegar produzindo.
+    </div>
+    <div class="col-card">
+      <h3>Para quem NÃO é</h3>
+      Quem procura "botão mágico" que dispensa revisão. Cada agente foi desenhado para MANTER o advogado no controle — o Módulo 7 inteiro existe para isso: auditoria de citações, checklist pré-protocolo e proteção de dados. IA sem revisão é risco; IA com método é vantagem competitiva.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Nascido dentro de uma <em>procuradoria</em>, não de uma agência de marketing.</h2>
+    <p style="color: var(--muted); font-size: 16px;">Cada prompt destila peças e pareceres reais: defesa em saúde com Tema 793, prescrição intercorrente com a linha do tempo que salva a execução, parecer de ata de registro de preços com a data-limite em destaque, PAD com a régua do devido processo. Packs genéricos de 50+ prompts são rasos em tudo; este é profundo no que a advocacia pública realmente faz — porque quem escreveu vive isso todos os dias.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="preco-bloco">
+      <div class="preco-risco">De R$ 450</div>
+      <div class="preco">R$ 67</div>
+      <div class="detalhe">85% de desconto · preço de fundador do lançamento · em até 6x</div>
+      <ul class="checks" style="text-align: left; max-width: 620px; margin: 24px auto 0;">
+        <li>🔄 <strong>Garantia de atualização vitalícia — produto VIVO:</strong> sempre que o Claude ou o Claude Code ganharem recursos que impactem os agentes, a nova edição aparece na sua área de compras, de graça, para sempre.</li>
+        <li><strong>Garantia incondicional de 7 dias</strong> pela Hotmart</li>
+        <li>Acesso imediato. Arquivo seu para sempre.</li>
+      </ul>
+      <a class="cta" href="#" data-hotmart>QUERO OS 38 AGENTES POR R$ 67 →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Perguntas <em>frequentes</em></h2>
+    <details><summary>Preciso pagar o Claude para usar?</summary><p>Não. 37 dos 38 agentes funcionam no plano gratuito do claude.ai. O Agente 05 usa o Claude Code (tem tier gratuito limitado).</p></details>
+    <details><summary>Funciona no ChatGPT/Gemini?</summary><p>Sim. Os prompts foram desenhados e testados no Claude e TESTADOS TAMBÉM no GPT (OpenAI) — inclusive o Auditor de Citações, que identificou 4 de 4 citações-armadilha no teste. São compatíveis ainda com Gemini (Google), Copilot (Microsoft), Grok (xAI) e DeepSeek: a estrutura é universal; o que varia são limites de anexo e pequenos ajustes de formatação. O Agente 05 (automação no terminal) foi escrito para o Claude Code e tem equivalentes no Codex CLI e no Gemini CLI.</p></details>
+    <details><summary>Sou advogado privado, serve para mim?</summary><p>Se você atende prefeitura/câmara, milita contra a Fazenda ou atua em licitações — sim. E os módulos 1, 2 e 7 servem para QUALQUER contencioso.</p></details>
+    <details><summary>Preciso saber programar?</summary><p>Não. É copiar, colar e preencher campos. Só o Agente 05 envolve terminal — e o próprio prompt instrui a IA a fazer tudo.</p></details>
+    <details><summary>Isso substitui o advogado?</summary><p>Não, e o material é explícito: toda peça exige revisão integral do responsável. Há um módulo inteiro de qualidade e segurança para isso.</p></details>
+    <details><summary>Por que o desconto é tão grande?</summary><p>Porque é preço de fundador: os primeiros compradores validam o produto, dão feedback e por isso levam o menor preço que este pack terá. O valor de tabela (R$ 450) reflete o conteúdo — 38 fluxos completos — e o preço sobe por lotes na direção dele.</p></details>
+    <details><summary>A IA muda toda hora — o pack não vai ficar velho?</summary><p>Não, e essa é a garantia mais importante: o pack é um produto vivo. Sempre que o Claude ou o Claude Code mudarem de forma que impacte os agentes, publicamos a edição revisada na plataforma e ela chega de graça a todo mundo que já comprou. O número da edição fica na capa.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>7 dias de garantia incondicional. Risco zero.</p></details>
+    <div style="text-align:center; margin-top: 36px;">
+      <a class="cta" href="#" data-hotmart>QUERO OS 38 AGENTES POR R$ 67 →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="marca">ADVPÚBLICO</span><br>
+    38 Agentes de IA para a Advocacia Pública · Venda e entrega processadas pela Hotmart · Garantia de 7 dias
+  </div>
+</footer>
+
+<script>
+  // Único ponto de troca: colar aqui o link de checkout da Hotmart quando o produto for aprovado.
+  var HOTMART_URL = "";
+  document.querySelectorAll("[data-hotmart]").forEach(function (a) {
+    if (HOTMART_URL) { a.href = HOTMART_URL; }
+    else { a.addEventListener("click", function (e) { e.preventDefault(); alert("Lançamento em breve — o link de compra será ativado na aprovação da Hotmart."); }); }
+  });
+</script>
+
+</body>
+</html>
