@@ -255,7 +255,7 @@
 
 <script>
   // Único ponto de troca: colar aqui o link de checkout da Hotmart quando o produto for aprovado.
-  var HOTMART_URL = "";
+  var HOTMART_URL = "https://pay.hotmart.com/N106632357V";
   document.querySelectorAll("[data-hotmart]").forEach(function (a) {
     if (HOTMART_URL) { a.href = HOTMART_URL; }
     else { a.addEventListener("click", function (e) { e.preventDefault(); alert("Lançamento em breve — o link de compra será ativado na aprovação da Hotmart."); }); }
